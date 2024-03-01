@@ -1,7 +1,7 @@
 import numpy as np
 
 class Perceptron():
-  def __int__(self,inputs,bias=1.0):
+  def __init__(self,inputs,bias=1.0):
     self.weights=(np.random.rand(inputs+1) * 2)-1
     self.bias=bias
   def run(self,x):
